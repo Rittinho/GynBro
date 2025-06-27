@@ -3,12 +3,25 @@
     x:Class="GynBro.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:GynBro"
+    xmlns:pages="clr-namespace:GynBro.View.TabPages"
     Title="GynBro">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+        <ShellContent
+            Title="Criar"
+            ContentTemplate="{DataTemplate pages:CreateWorkout}"
+            Icon="plus.png"
+            Route="CreateWorkout" />
+        <ShellContent
+            Title="Treino"
+            ContentTemplate="{DataTemplate pages:DalyWorkout}"
+            Icon="dumbbell.png"
+            Route="DalyWorkout" />
+        <ShellContent
+            Title="Perfil"
+            ContentTemplate="{DataTemplate pages:Profile}"
+            Icon="profile.png"
+            Route="Profile" />
+    </TabBar>
 
 </Shell>

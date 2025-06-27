@@ -13,6 +13,11 @@ namespace GynBro
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+
+                    //font awesome
+                    fonts.AddFont("FAB.ttf", "FAB");
+                    fonts.AddFont("FAR.ttf", "FAR");
+                    fonts.AddFont("FAS.ttf", "FAS");
                 });
 
 #if DEBUG
